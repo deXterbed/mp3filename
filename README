@@ -4,9 +4,11 @@ http://www.github.com/railsfreak/mp3filename
 
 == DESCRIPTION:
 
+Mp3FileName is a utility to rename all mp3 files in a directory to their title.
 
 == FEATURES/PROBLEMS:
 
+% mp3filename <directory_path>
 
 == SYNOPSIS:
 
