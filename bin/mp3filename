@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'mp3filename'
+
+
+Mp3FileName.new(ARGV[0]).change
