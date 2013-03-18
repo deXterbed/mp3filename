@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "mp3filename"
-  s.version = "1.0.1"
+  s.version = "1.0.2"
   s.authors = ["Manoj Mishra"]
   s.date = %q{2012-03-18}
   s.description = 'Mp3 File Name is a utility to rename mp3 files to their title'

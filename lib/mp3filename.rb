@@ -10,16 +10,18 @@ class Mp3FileName
   end
 
   def change
-    begin
-      Dir["#{@path}/*.mp3"].each do |file|
-        Mp3Info.open(file) do |mp3|
-          title = mp3.tag.title.strip
-          title.empty? ? file.gsub!(/^\d*_*/,'') : FileUtils.mv("#{file}", "#{title}.mp3")
-          puts "Title changed to : #{title == file ? file : title}"
+    Dir["#{@path}/*.mp3"].each do |file|
+      Mp3Info.open(file) do |mp3|          
+        title = mp3.tag.title
+        title ||= ""        
+        file_name = title.empty? ? file.gsub(/^\d*_*/,'') : "#{title}.mp3"
+        begin
+          FileUtils.mv("#{file}", file_name)
+          puts "File Name changed to : #{file_name}"
+        rescue
+          next
         end
       end
-    rescue
-      #raise Mp3Error, "An Unknown error has occured..."
     end
   end
 end
