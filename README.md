@@ -6,13 +6,11 @@ http://www.github.com/railsfreak/mp3filename
 
 mp3filename is a utility to rename all mp3 files in a directory to their title.
 
-
 ## Synopsis
 
 ```
 mp3filename <directory_path>
 ```
-
 ## Requirements
 
 ruby-mp3info
