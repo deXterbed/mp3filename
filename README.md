@@ -1,36 +1,31 @@
-= mp3filename
+# mp3filename
 
 http://www.github.com/railsfreak/mp3filename
 
-== DESCRIPTION:
+## Description
 
-Mp3FileName is a utility to rename all mp3 files in a directory to their title.
-
-== FEATURES/PROBLEMS:
-
-% mp3filename <directory_path>
-
-== SYNOPSIS:
+mp3filename is a utility to rename all mp3 files in a directory to their title.
 
 
-== REQUIREMENTS:
+## Synopsis
+
+```
+mp3filename <directory_path>
+```
+
+## Requirements
 
 ruby-mp3info
 
-== INSTALL:
+## Install
 
 sudo gem install mp3filename
 
-== DEVELOPERS:
+## Developers
 
-After checking out the source, run:
+Manoj Mishra
 
-  $ rake newb
-
-This task will install any missing dependencies, run the tests/specs,
-and generate the RDoc.
-
-== LICENSE:
+## License
 
 (The MIT License)
 
